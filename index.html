@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>圣诞快乐 - 温暖冬日</title>
+  <meta name="description" content="在这个温暖的圣诞夜，送一份治愈的祝福。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Zhi+Mang+Xing&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- 远景层 -->
+  <div id="background-layer"></div>
+
+  <!-- 粒子层 (雪花与烟花) -->
+  <div id="canvas-container"></div>
+
+  <!-- 近景装饰层 -->
+  <div class="foreground-deco"></div>
+
+  <!-- 主卡片层 -->
+  <main class="card-wrapper">
+    <div class="card">
+      <div class="card-image-container">
+        <img src="card_main.png" alt="圣诞老人祝福">
+        <!-- 给图片加点柔光 -->
+        <div
+          style="position: absolute; top:0; left:0; width:100%; height:100%; box-shadow: inset 0 0 30px rgba(0,0,0,0.2); pointer-events: none;">
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h1>Merry Christmas</h1>
+        <p>愿所有美好在这个冬天如约而至</p>
+      </div>
+
+      <!-- 隐藏的寄语 -->
+      <div class="blessing-text">
+        <h2>致亲爱的</h2>
+        <p>在这个雪花落满窗格的夜晚<br>最庆幸的是有你陪在身边<br>你是冬日里的暖阳<br>也是我生活里最绚烂的烟火<br>圣诞快乐，我的女孩</p>
+        <div style="font-size: 1.5rem; margin-top: 1.5rem; letter-spacing: 15px; opacity: 0.8;">✨ ❤️ ✨</div>
+      </div>
+
+      <button id="celebrateBtn" class="celebrate-btn">✨ 开启专属心意</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
